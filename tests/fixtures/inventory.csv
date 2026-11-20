@@ -1,0 +1,7 @@
+bucket,key,size,last_modified_date,storage_class
+logs-example-com,app/2026-11-10.log,1073741824,2026-11-10T03:00:00Z,STANDARD
+logs-example-com,app/2026-10-06.log,1073741824,2026-10-06T03:00:00Z,STANDARD
+logs-example-com,app/2026-05-04.log,1073741824,2026-05-04T03:00:00Z,STANDARD
+logs-example-com,app/marker.txt,1000,2025-10-16T03:00:00Z,STANDARD
+logs-example-com,archive/2024.tar,5368709120,2024-12-31T00:00:00Z,GLACIER
+media-example-com,video/launch.mp4,1073741824000,2026-01-01T00:00:00Z,STANDARD
