@@ -1,0 +1,21 @@
+# ILLUSTRATIVE PLACEHOLDER PRICES. These are NOT current AWS prices.
+# Replace them with the prices for your region from the AWS pricing page.
+currency: USD
+
+per_gb_month:            # 1 GB = 2^30 bytes
+  standard: "0.023"
+  standard_ia: "0.0125"
+  it_frequent: "0.023"
+  it_infrequent: "0.0125"
+  it_archive_instant: "0.004"
+
+it_monitoring_per_1000_objects: "0.0025"   # per month
+transition_per_1000_requests: "0.01"       # one-time, per lifecycle transition
+
+# AWS behaviour to re-verify against current S3 documentation.
+rules:
+  it_min_monitored_bytes: 131072        # IT doesn't monitor or tier objects < 128 KiB
+  it_infrequent_after_days: 30
+  it_archive_instant_after_days: 90
+  ia_min_billable_bytes: 131072         # Standard-IA bills small objects as 128 KiB
+  ia_transition_after_days: 30          # lifecycle needs >= 30 days in STANDARD first
