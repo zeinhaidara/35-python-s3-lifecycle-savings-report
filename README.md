@@ -17,6 +17,11 @@ moving STANDARD objects to **Intelligent-Tiering** or by adding a
 > Develop a scheduled job that calculates and reports on S3
 > Intelligent-Tiering / Azure Blob lifecycle savings opportunities.
 
+Why it matters: objects in S3 Standard that nobody reads are still billed at
+the Standard rate. Estimating the saving first shows whether
+Intelligent-Tiering or a lifecycle rule is worth turning on, and for which
+buckets.
+
 ## How it works
 
 ```mermaid
